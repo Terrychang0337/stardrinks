@@ -1,0 +1,199 @@
+/* ----------$Catalog--------
+
+$Catalog
+$Banner
+$Section
+
+------------------------------ */
+
+
+/* -----Header----- */
+
+
+/* -----$Banner----- */
+
+.banner {
+    display: block;
+    margin-top: 60px;
+    height: 210px;
+    width: 100%;
+    background-image: url('../images/starsky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:576px) {
+    .banner {
+        height: 160px;
+    }
+}
+
+.banner h1 {
+    position: absolute;
+    font-weight: bolder;
+}
+
+.banner h1:nth-child(1) {
+    top: 30%;
+    right: 30%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: rgb(250, 250, 148);
+}
+
+.banner h1:nth-child(2) {
+    top: 50%;
+    right: 22%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: whitesmoke;
+    z-index: 50;
+}
+
+@media(max-width:576px) {
+    .banner h1:nth-child(1) {
+        right: 10%;
+    }
+    .banner h1:nth-child(2) {
+        right: 8%;
+    }
+}
+
+.banner .banner__drink1 {
+    position: absolute;
+    top: 28px;
+    left: 10%;
+    height: 285px;
+    width: 221px;
+    background-image: url('../images/drink3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    z-index: 30;
+    overflow: hidden;
+}
+
+.banner .banner__drink2 {
+    position: absolute;
+    top: 20px;
+    left: 3%;
+    height: 280px;
+    width: 183px;
+    background-image: url('../images/drink1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(22deg);
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    -o-transform: rotate(22deg);
+    z-index: 20;
+}
+
+.banner .banner__drink3 {
+    position: absolute;
+    top: 20px;
+    left: -2%;
+    height: 271px;
+    width: 132px;
+    background-image: url('../images/drink2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    z-index: 10;
+}
+
+@media(max-width:576px) {
+    .banner .banner__drink1,
+    .banner .banner__drink2,
+    .banner .banner__drink3 {
+        background-size: 60%;
+    }
+    .banner .banner__drink1 {
+        top: -7%;
+        left: -7%;
+    }
+    .banner .banner__drink2 {
+        top: -7%;
+        left: -11%;
+    }
+    .banner .banner__drink3 {
+        top: -7%;
+        left: -16%;
+    }
+}
+
+
+/* -----$Section---- */
+
+section {
+    background-color: rgb(249, 252, 222);
+}
+
+.productbar {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(88, 14, 88);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.productbar a:hover {
+    color: rgb(88, 14, 88);
+    text-decoration: none;
+}
+
+.productmenu img {
+    display: block;
+    padding: 20px 0px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productmenu .series {
+    width: auto;
+}
+
+.productmenu .product__desc {
+    padding: 20px 20px;
+}
+
+.productmenu h2 {
+    display: inline-block;
+    color: orange;
+}
+
+.productmenu .size {
+    display: inline-block;
+}
+
+.productmenu .size__span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background-color: #ffd800;
+    font-size: 0.92rem;
+    color: rgb(40, 13, 65);
+    text-align: center;
+    margin-left: 10px;
+}

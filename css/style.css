@@ -1,0 +1,840 @@
+/* ----------$Catalog--------
+$Catalog
+$Mainpage
+$Jumbotron
+$Intro
+$Populardrink
+$Location
+$Footer
+------------------------------ */
+
+
+/* -----$Mainpage----- */
+
+.mainpage .maintitle {
+    position: absolute;
+    top: 149px;
+    left: 7%;
+    width: 25px;
+    height: 150px;
+    color: #fff;
+}
+
+.mainpage .brandlogo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 292px;
+    background-image: url('../images/brandlogo.png');
+    background-size: initial;
+    background-repeat: no-repeat;
+    z-index: 500;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.mainpage .mainpage__drink1 {
+    position: absolute;
+    top: 149px;
+    left: 18%;
+    transform: rotate(-20deg);
+    background-image: url('../images/drink3.png');
+    height: 285px;
+    width: 221px;
+    background-size: inherit;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    z-index: 30;
+    animation-name: drink1move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes drink1move {
+    0% {
+        top: 149px;
+        left: 18%;
+    }
+    33% {
+        top: 156px;
+        left: 15%;
+        transform: rotate(-17deg);
+        -webkit-transform: rotate(-17deg);
+        -moz-transform: rotate(-17deg);
+        -ms-transform: rotate(-17deg);
+        -o-transform: rotate(-17deg);
+    }
+    66% {
+        top: 160px;
+        left: 17%;
+        transform: rotate(-19deg);
+        -webkit-transform: rotate(-19deg);
+        -moz-transform: rotate(-19deg);
+        -ms-transform: rotate(-19deg);
+        -o-transform: rotate(-19deg);
+    }
+    100% {
+        top: 149px;
+        left: 18%;
+        transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+    }
+}
+
+@media (max-width:768px) {
+    .mainpage .mainpage__drink1 {
+        top: 165px;
+        left: 20%;
+    }
+    @keyframes drink1move {
+        0% {
+            top: 165px;
+            left: 20%;
+        }
+        33% {
+            top: 170px;
+            left: 23%;
+            transform: rotate(-17deg);
+            -webkit-transform: rotate(-17deg);
+            -moz-transform: rotate(-17deg);
+            -ms-transform: rotate(-17deg);
+            -o-transform: rotate(-17deg);
+        }
+        66% {
+            top: 175px;
+            left: 21%;
+            transform: rotate(-19deg);
+            -webkit-transform: rotate(-19deg);
+            -moz-transform: rotate(-19deg);
+            -ms-transform: rotate(-19deg);
+            -o-transform: rotate(-19deg);
+        }
+        100% {
+            top: 165px;
+            left: 20%;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+    }
+}
+
+.mainpage .mainpage__drink2 {
+    position: absolute;
+    top: 130px;
+    left: 42%;
+    transform: rotate(-8deg);
+    background-image: url('../images/drink1.png');
+    height: 280px;
+    width: 183px;
+    background-size: inherit;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    z-index: 20;
+    animation-name: drink2move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes drink2move {
+    0% {
+        top: 130px;
+        left: 42%;
+    }
+    30% {
+        top: 126px;
+        left: 44%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    69% {
+        top: 132px;
+        left: 46%;
+        transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+    }
+    100% {
+        top: 130px;
+        left: 42%;
+        transform: rotate(-8deg);
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        -o-transform: rotate(-8deg);
+    }
+}
+
+.mainpage .mainpage__drink3 {
+    position: absolute;
+    top: 130px;
+    left: 65%;
+    transform: rotate(5deg);
+    background-image: url('../images/drink2.png');
+    height: 271px;
+    width: 132px;
+    background-size: inherit;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    z-index: 10;
+    overflow: hidden;
+    animation-name: drink3move;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes drink3move {
+    0% {
+        top: 130px;
+        left: 65%;
+    }
+    39% {
+        top: 133px;
+        left: 66%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+    73% {
+        top: 137px;
+        left: 67%;
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+    }
+    100% {
+        top: 130px;
+        left: 65%;
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+}
+
+@media(max-width:575px) {
+    .mainpage .mainpage__drink1,
+    .mainpage .mainpage__drink2,
+    .mainpage .mainpage__drink3 {
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+}
+
+.mainpage__bgcover {
+    margin: 0;
+    padding: 0;
+    height: 620px;
+    width: 100%;
+    background: url('../images/starsky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.mainbtnbar {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.mainpage .mainbtn,
+.location .mainbtn {
+    display: block;
+    height: 46px;
+    width: 150px;
+    border: 1px solid rgb(250, 250, 148);
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(250, 250, 148);
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: 0.3s all;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    z-index: 50;
+}
+
+.mainpage .mainbtn:hover,
+.location .mainbtn:hover {
+    /* border: 2px solid rgb(99, 195, 194); */
+    background-color: rgb(250, 250, 148);
+    color: rgb(40, 13, 65);
+    font-weight: 800;
+}
+
+
+/* -----$Junbotron----- */
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+    background-color: rgb(15, 4, 27);
+}
+
+.jumbotronpic {
+    max-width: 60%;
+    height: auto;
+    background-size: cover;
+    background-color: whitesmoke;
+    margin: 20px auto;
+}
+
+@media(max-width:720px) {
+    .jumbotronpic {
+        max-width: 90%;
+    }
+}
+
+.jumbotron .slick-prev {
+    position: absolute;
+    left: 10%;
+    z-index: 30;
+}
+
+.jumbotron .slick-next {
+    position: absolute;
+    right: 10%;
+}
+
+@media(max-width:720px) {
+    .jumbotron button {
+        display: none !important;
+    }
+}
+
+
+/* -----$Intro----- */
+
+.intro__bgcover {
+    height: 900px;
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.intro {
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+h1 {
+    background-color: rgb(15, 4, 27, 0.8);
+}
+
+.intro .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+@media(max-width:925px) {
+    .intro .row {
+        display: block;
+    }
+}
+
+.intro .introblock {
+    height: 400px;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media(max-width:925px) {
+    .intro .introblock {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 90%;
+        height: 120px;
+    }
+    .intro .introblock::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 116px;
+        border: 0px solid whitesmoke;
+        border-radius: 20px;
+        background-color: rgb(250, 250, 250, 0.4);
+        z-index: 2;
+    }
+}
+
+
+/* Start introblock1 */
+
+.intro .introblock1 {
+    background-image: url(../images/into1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro .introblock1__title {
+    color: rgb(56, 17, 43);
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 3%;
+    font-weight: bolder;
+    transition: 0.3s all;
+    opacity: 1;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+.intro .introblock .introblock1__content h3 {
+    color: rgb(22, 88, 100);
+    font-weight: bolder;
+    opacity: 1;
+}
+
+.intro .introblock .introblock1__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(250, 250, 250, 0.6);
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.topgate1 {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: inherit;
+    height: 140px;
+    background-color: white;
+    border-radius: inherit;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.3s all;
+}
+
+.bottomgate1 {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: inherit;
+    height: 140px;
+    background-color: white;
+    border-radius: inherit;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: 0.3s all;
+}
+
+
+/* Start introblock2 */
+
+.intro .introblock2 {
+    background-image: url(../images/into2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.intro .introblock2__title {
+    color: rgb(56, 17, 43);
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 3%;
+    font-weight: bolder;
+    transition: 0.3s all;
+    opacity: 1;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.intro .introblock .introblock2__content h3 {
+    color: rgb(22, 88, 100);
+    font-weight: bolder;
+    opacity: 1;
+}
+
+.intro .introblock .introblock2__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(250, 250, 250, 0.6);
+    opacity: 0;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: 10;
+}
+
+.topgate2 {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: inherit;
+    height: 20px;
+    background-color: white;
+    border-radius: inherit;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.3s all;
+    z-index: 50;
+}
+
+.bottomgate2 {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: inherit;
+    height: 270px;
+    background-color: white;
+    border-radius: inherit;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: 0.3s all;
+}
+
+
+/* Start introblock3 */
+
+.intro .introblock3 {
+    background-image: url(../images/into3.jpg);
+    background-size: cover;
+}
+
+.intro .introblock3__title {
+    color: rgb(56, 17, 43);
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 3%;
+    font-weight: bolder;
+    transition: 0.3s all;
+    opacity: 1;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.intro .introblock .introblock3__content h3 {
+    color: rgb(22, 88, 100);
+    font-weight: bolder;
+    opacity: 1;
+}
+
+.intro .introblock .introblock3__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(250, 250, 250, 0.6);
+    opacity: 0;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: 10;
+}
+
+.topgate3 {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: inherit;
+    height: 240px;
+    background-color: white;
+    border-radius: inherit;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.3s all;
+    z-index: 50;
+}
+
+.bottomgate3 {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: inherit;
+    height: 50px;
+    background-color: white;
+    border-radius: inherit;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: 0.3s all;
+}
+
+.introblock__mobile {
+    display: none;
+    z-index: 3;
+}
+
+.introblock__mobile___title {
+    color: rgb(17, 56, 44);
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+@media(max-width:925px) {
+    .topgate1,
+    .bottomgate1,
+    .introblock1__title,
+    .introblock1__content,
+    .topgate2,
+    .bottomgate2,
+    .introblock2__title,
+    .introblock2__content,
+    .topgate3,
+    .bottomgate3,
+    .introblock3__title,
+    .introblock3__content {
+        display: none!important;
+    }
+    .introblock__mobile {
+        display: inline-block;
+        line-height: 24px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 30px;
+    }
+}
+
+
+/*-----$Populardrink-----  */
+
+.populardrink {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    height: auto;
+    background-color: rgb(249, 252, 222);
+}
+
+.populardrink img {
+    display: block;
+    padding: 20px 0px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.populardrink .product__desc {
+    padding: 20px 20px;
+}
+
+.populardrink h2 {
+    display: inline-block;
+    color: orange;
+}
+
+.populardrink .size {
+    display: inline-block;
+}
+
+.populardrink .size__span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background-color: #ffd800;
+    font-size: 0.92rem;
+    color: rgb(40, 13, 65);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.square {
+    position: absolute;
+    border: 4px solid rgb(252, 255, 72);
+    height: 180px;
+    width: 180px;
+    top: 12%;
+    left: 27%;
+}
+
+.squareangle1 {
+    transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+}
+
+.squareangle2 {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}
+
+.squareangle3 {
+    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+}
+
+.leaf1 {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    height: 80px;
+    width: 80px;
+    background-image: url('../images/leaf.png');
+    opacity: 0.4;
+    background-size: cover;
+}
+
+.leaf2 {
+    position: absolute;
+    top: 70px;
+    left: 55px;
+    height: 80px;
+    width: 80px;
+    background-image: url('../images/leaf.png');
+    opacity: 0.4;
+    background-size: cover;
+}
+
+.leaf3 {
+    position: absolute;
+    top: 40px;
+    right: 65px;
+    height: 80px;
+    width: 80px;
+    background-image: url('../images/leaf.png');
+    opacity: 0.4;
+    background-size: cover;
+}
+
+
+/* -----$Location----- */
+
+.location {
+    display: block;
+    padding: 20px 0;
+    height: auto;
+    background-color: rgb(15, 4, 27);
+    color: whitesmoke;
+}
+
+.location iframe {
+    border: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 86%;
+    height: 450px;
+}
+
+@media(max-width:768px) {
+    .location iframe {
+        width: 70%;
+        height: 300px;
+    }
+}
+
+.location h3 {
+    color: orange;
+}
+
+.location .address {
+    padding: 20px 30px;
+}

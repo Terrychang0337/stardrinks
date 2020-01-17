@@ -1,0 +1,376 @@
+/* ----------$Catalog--------
+
+$Catalog
+$General
+$Navbar
+$Menu
+$Back-to-top 
+$Button
+------------------------------ */
+
+
+/*----- $General -----  */
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.u-clearfix,
+.u-clearfix::after,
+.u-clearfix::before {
+    clear: both;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.pointcolor {
+    color: rgb(250, 250, 148);
+}
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* $Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: block;
+    background-color: rgb(7, 3, 46);
+    padding: 0rem 1rem;
+    height: 60px;
+    width: 20%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    z-index: 500;
+}
+
+.scrolled {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
+
+.navbar__navmenu {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* border: 1px solid white; */
+}
+
+.navbar__navmenu span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 3px;
+    background-color: whitesmoke;
+}
+
+.navbar__navmenu .span1 {
+    margin-top: 13px;
+    width: 20px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.navbar__navmenu .span2 {
+    margin-top: 28px;
+    width: 30px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.navbar__navmenu .span3 {
+    margin-top: 43px;
+    width: 40px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.navbar__navmenu .navbar__navmenu__span__child1-active {
+    position: absolute;
+    margin: initial;
+    width: 50px;
+    left: 5%;
+    top: 50%;
+    background-color: rgb(250, 250, 148);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.navbar__navmenu .navbar__navmenu__span__child2-active {
+    margin-top: 31px;
+    width: 0px;
+}
+
+.navbar__navmenu .navbar__navmenu__span__child3-active {
+    position: absolute;
+    margin: initial;
+    width: 50px;
+    left: 5%;
+    top: 50%;
+    background-color: rgb(250, 250, 148);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+
+/* 點擊navmenu時 span添加此class */
+
+.navbar__navmenu .active_color {
+    background-color: rgb(250, 250, 148);
+}
+
+.navbar .brandlogo {
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    background-image: url('../images/brandlogo.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 30px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+@media(max-width:768px) {
+    .navbar .brandlogo {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+
+/* ----- $Menu ----- */
+
+.menu {
+    display: block;
+    position: fixed;
+    z-index: 500;
+    top: 60px;
+    left: -30%;
+    width: 20%;
+    height: 90vh;
+    background-color: rgb(94, 39, 94);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s all;
+    -webkit-transition: 0.8s all;
+    -moz-transition: 0.8s all;
+    -ms-transition: 0.8s all;
+    -o-transition: 0.8s all;
+}
+
+.menu-active {
+    left: 0;
+    opacity: 0.9;
+    visibility: visible;
+}
+
+@media(max-width:768px) {
+    .menu {
+        width: 40%;
+    }
+}
+
+.unscrolled {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu .menuitem {
+    display: block;
+    height: 80px;
+    margin: 10px 10px;
+    padding: 15px 0px;
+    line-height: 32px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .menu .menuitem {
+        font-size: 1rem;
+    }
+}
+
+.menu .menuitem:first-child {
+    margin-top: 50px;
+}
+
+.menu .menuitem:hover {
+    color: rgb(250, 250, 148);
+}
+
+.menu .menuitem::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 0px;
+    height: 2px;
+    width: 0;
+    background-color: rgb(250, 250, 148);
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.menu .menuitem:hover::after {
+    content: "";
+    width: 100%;
+}
+
+
+/*----- $Back-to-top -----*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 72px;
+    text-align: center;
+    line-height: 30px;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -ms-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+@media(max-width:925px) {
+    #back-to-top {
+        display: none;
+    }
+}
+
+
+/* -----$Footer----- */
+
+.footer {
+    margin-top: -110px;
+    /* height: 160px; */
+    background-color: rgb(5, 2, 36);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 10px;
+    z-index: 50;
+}
+
+.footer .brandlogo {
+    display: block;
+    height: 60px;
+    width: 200px;
+    background-image: url('../images/brandlogo.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a {
+    color: orange;
+}
+
+
+/* -----$Button----- */
+
+.mainbtn {
+    display: block;
+    height: 46px;
+    width: 150px;
+    border: 1px solid rgb(40, 13, 65);
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(40, 13, 65);
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    transition: 0.3s all;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    z-index: 50;
+}
+
+.mainbtn:hover {
+    background-color: rgb(40, 13, 65);
+    color: whitesmoke;
+    font-weight: 500;
+    text-decoration: none;
+}

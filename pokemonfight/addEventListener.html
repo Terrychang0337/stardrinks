@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+    <button id="myBtn">Try it</button>
+
+    <button id="start-btn">開始對戰</button>
+
+    <script>
+        var x = document.getElementById("myBtn");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("click", someOtherFunction);
+
+        function myFunction() {
+            alert("Hello World!")
+        }
+
+        function someOtherFunction() {
+            alert("This function was also executed!")
+        }
+
+
+        var StartBtn = document.getElementById("start-btn");
+        StartBtn.addEventListener("click", fight);
+
+
+
+        function fight() {
+            var comchoice = Math.floor(Math.random() * 3);
+            var choice = prompt('請問您要選擇哪隻神奇寶貝?0.菊草葉 1.火球鼠 2.小居鱷', 0);
+        }
+
+        if(choice === "0"){
+            alert("你派出了菊草葉!");
+        }
+    </script>
+
+</body>
+
+</html>

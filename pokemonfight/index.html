@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zch-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge">
+    <title>pokemon fight</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap " rel="stylesheet ">
+    <!-- animated CSS -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- Self CSS -->
+    <link rel="stylesheet " href="style.css">
+
+</head>
+
+<body onload="welcome()">
+    <div class="bg"></div>
+
+    <header>
+        <div class="title wow bounceInLeft">
+            <h1>神奇寶貝對戰</h1>
+            <h1>pokemon fight</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="main">
+            <div class="scoretable">
+                <div class="wintable"><p id="win_show">勝:0</p>
+                </div>
+                <div class="losetable"><p id="lose_show">負:0</p>
+                </div>
+            </div>
+            <div class="main__button-group">
+                <button class="fightbtn fightbtn_A animatedhover bounce" id="start-btnA" title="妙娃種子"><span></span></button>
+                <button class="fightbtn fightbtn_B animatedhover bounce" id="start-btnB" title="小火龍"><span></span></button>
+                <button class="fightbtn fightbtn_C animatedhover bounce" id="start-btnC" title="傑尼龜"><span></span></button>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!-- jquery 3.x -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <!-- wow JS -->
+    <script src="wow.min.js"></script>
+    <!-- self JS -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
