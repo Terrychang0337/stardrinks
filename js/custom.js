@@ -5,9 +5,11 @@ var rellax = new Rellax('.rellax', {
 
 });
 
+
 function myload() {
     $(".loading").fadeOut(1500);
     $("#load").fadeOut(1500);
+    $("body").css({ "overflow": "auto" });
 }　　
 window.onload = myload;
 
@@ -200,4 +202,4 @@ $(document).ready(function() {
     }
 
 
-});
+})
