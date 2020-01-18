@@ -450,7 +450,6 @@ h1 {
 }
 
 .intro .introblock .introblock1__content h3 {
-    color: rgb(22, 88, 100);
     font-weight: bolder;
     opacity: 1;
 }
@@ -528,7 +527,6 @@ h1 {
 }
 
 .intro .introblock .introblock2__content h3 {
-    color: rgb(22, 88, 100);
     font-weight: bolder;
     opacity: 1;
 }
@@ -604,7 +602,6 @@ h1 {
 }
 
 .intro .introblock .introblock3__content h3 {
-    color: rgb(22, 88, 100);
     font-weight: bolder;
     opacity: 1;
 }
@@ -664,7 +661,6 @@ h1 {
 }
 
 .introblock__mobile___title {
-    color: rgb(17, 56, 44);
     font-weight: bolder;
     font-size: 32px;
 }
@@ -719,7 +715,6 @@ h1 {
 
 .populardrink h2 {
     display: inline-block;
-    color: orange;
 }
 
 .populardrink .size {
@@ -829,10 +824,6 @@ h1 {
         width: 70%;
         height: 300px;
     }
-}
-
-.location h3 {
-    color: orange;
 }
 
 .location .address {

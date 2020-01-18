@@ -41,7 +41,6 @@ $Section
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    color: rgb(250, 250, 148);
 }
 
 .banner h1:nth-child(2) {
@@ -178,7 +177,6 @@ section {
 
 .productmenu h2 {
     display: inline-block;
-    color: orange;
 }
 
 .productmenu .size {
