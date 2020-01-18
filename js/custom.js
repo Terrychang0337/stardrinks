@@ -7,8 +7,8 @@ var rellax = new Rellax('.rellax', {
 
 
 function myload() {
-    $(".loading").fadeOut(1500);
-    $("#load").fadeOut(1500);
+    $(".loading").fadeOut(100);
+    $("#load").fadeOut(100);
     $("body").css({ "overflow": "auto" });
 }　　
 window.onload = myload;
