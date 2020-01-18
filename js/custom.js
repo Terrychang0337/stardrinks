@@ -5,6 +5,12 @@ var rellax = new Rellax('.rellax', {
 
 });
 
+function myload() {
+    $(".loading").fadeOut(1500);
+    $("#load").fadeOut(1500);
+}　　
+window.onload = myload;
+
 // var rellax = new Rellax('.rellax', {
 //     speed: -2,
 //     center: true,
