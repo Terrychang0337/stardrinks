@@ -464,3 +464,7 @@ template {
 .color--green-blue {
     color: rgb(17, 56, 44);
 }
+
+.color--whitesmoke {
+    color: rgb(245, 245, 245);
+}
