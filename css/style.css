@@ -391,6 +391,10 @@ h1 {
     }
 }
 
+.intro h5 {
+    line-height: 28px;
+}
+
 /* Start introblock1 */
 
 .intro .introblock1 {
