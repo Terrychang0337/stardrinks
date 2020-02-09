@@ -8,7 +8,6 @@ $Location
 $Footer
 ------------------------------ */
 
-
 /* -----$Mainpage----- */
 
 .mainpage .maintitle {
@@ -241,9 +240,7 @@ $Footer
 }
 
 @media(max-width:575px) {
-    .mainpage .mainpage__drink1,
-    .mainpage .mainpage__drink2,
-    .mainpage .mainpage__drink3 {
+    .mainpage .mainpage__drink1, .mainpage .mainpage__drink2, .mainpage .mainpage__drink3 {
         background-size: 80%;
         background-repeat: no-repeat;
     }
@@ -267,7 +264,6 @@ $Footer
     bottom: 30px;
     left: 0;
 }
-
 
 /* -----$Junbotron----- */
 
@@ -308,7 +304,6 @@ $Footer
     }
 }
 
-
 /* -----$Intro----- */
 
 .intro__bgcover {
@@ -326,6 +321,16 @@ $Footer
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+}
+
+.intro__bgcover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .intro {
@@ -386,7 +391,6 @@ h1 {
     }
 }
 
-
 /* Start introblock1 */
 
 .intro .introblock1 {
@@ -397,6 +401,8 @@ h1 {
 
 .intro .introblock1__title {
     color: rgb(56, 17, 43);
+    text-align: center;
+    width: 80%;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 3%;
     font-weight: bolder;
@@ -439,6 +445,7 @@ h1 {
     -moz-border-radius: inherit;
     -ms-border-radius: inherit;
     -o-border-radius: inherit;
+    letter-spacing: 2px;
 }
 
 .topgate1 {
@@ -467,7 +474,6 @@ h1 {
     transition: 0.3s all;
 }
 
-
 /* Start introblock2 */
 
 .intro .introblock2 {
@@ -478,6 +484,8 @@ h1 {
 
 .intro .introblock2__title {
     color: rgb(56, 17, 43);
+    width: 80%;
+    text-align: center;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 3%;
     font-weight: bolder;
@@ -499,6 +507,7 @@ h1 {
     top: 0;
     left: 0;
     height: 70%;
+    width: 80%;
     width: inherit;
     height: inherit;
     background-color: rgb(250, 250, 250, 0.6);
@@ -514,6 +523,7 @@ h1 {
     -ms-border-radius: inherit;
     -o-border-radius: inherit;
     z-index: 10;
+    letter-spacing: 2px;
 }
 
 .topgate2 {
@@ -543,7 +553,6 @@ h1 {
     transition: 0.3s all;
 }
 
-
 /* Start introblock3 */
 
 .intro .introblock3 {
@@ -553,6 +562,8 @@ h1 {
 
 .intro .introblock3__title {
     color: rgb(56, 17, 43);
+    text-align: center;
+    width: 80%;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 3%;
     font-weight: bolder;
@@ -573,7 +584,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 70%;
+    height: 80%;
     width: inherit;
     height: inherit;
     background-color: rgb(250, 250, 250, 0.6);
@@ -589,6 +600,7 @@ h1 {
     -ms-border-radius: inherit;
     -o-border-radius: inherit;
     z-index: 10;
+    letter-spacing: 2px;
 }
 
 .topgate3 {
@@ -625,22 +637,11 @@ h1 {
 
 .introblock__mobile___title {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 @media(max-width:925px) {
-    .topgate1,
-    .bottomgate1,
-    .introblock1__title,
-    .introblock1__content,
-    .topgate2,
-    .bottomgate2,
-    .introblock2__title,
-    .introblock2__content,
-    .topgate3,
-    .bottomgate3,
-    .introblock3__title,
-    .introblock3__content {
+    .topgate1, .bottomgate1, .introblock1__title, .introblock1__content, .topgate2, .bottomgate2, .introblock2__title, .introblock2__content, .topgate3, .bottomgate3, .introblock3__title, .introblock3__content {
         display: none!important;
     }
     .introblock__mobile {
@@ -652,7 +653,6 @@ h1 {
         padding-bottom: 30px;
     }
 }
-
 
 /*-----$Populardrink-----  */
 
@@ -674,6 +674,11 @@ h1 {
 
 .populardrink .product__desc {
     padding: 20px 20px;
+}
+
+.populardrink .product__desc p {
+    letter-spacing: 2px;
+    color: rgb(63, 61, 56);
 }
 
 .populardrink h2 {
@@ -762,7 +767,6 @@ h1 {
     opacity: 0.4;
     background-size: cover;
 }
-
 
 /* -----$Location----- */
 

@@ -6,9 +6,7 @@ $Section
 
 ------------------------------ */
 
-
 /* -----Header----- */
-
 
 /* -----$Banner----- */
 
@@ -120,9 +118,7 @@ $Section
 }
 
 @media(max-width:576px) {
-    .banner .banner__drink1,
-    .banner .banner__drink2,
-    .banner .banner__drink3 {
+    .banner .banner__drink1, .banner .banner__drink2, .banner .banner__drink3 {
         background-size: 60%;
     }
     .banner .banner__drink1 {
@@ -138,7 +134,6 @@ $Section
         left: -16%;
     }
 }
-
 
 /* -----$Section---- */
 
@@ -173,6 +168,11 @@ section {
 
 .productmenu .product__desc {
     padding: 20px 20px;
+}
+
+.productmenu .product__desc p {
+    letter-spacing: 2px;
+    color: rgb(63, 61, 56);
 }
 
 .productmenu h2 {

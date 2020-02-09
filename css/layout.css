@@ -2,9 +2,7 @@
     max-width: 100%;
 }
 
-img,
-.noneborder,
-.slick-slide {
+img, .noneborder, .slick-slide {
     outline: none;
     border: 0px;
 }
@@ -12,6 +10,7 @@ img,
 .blockcenter {
     display: inline-block;
     position: absolute;
+    width: 80%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -42,7 +41,7 @@ img,
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 30%;
+    bottom: 25%;
     transform: translate(-50%, 80%);
     -webkit-transform: translate(-50%, 80%);
     -moz-transform: translate(-50%, 80%);

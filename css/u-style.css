@@ -8,7 +8,6 @@ $Back-to-top
 $Button
 ------------------------------ */
 
-
 /*----- $General -----  */
 
 * {
@@ -20,15 +19,14 @@ $Button
     user-select: none;
 }
 
-.u-clearfix,
-.u-clearfix::after,
-.u-clearfix::before {
+.u-clearfix, .u-clearfix::after, .u-clearfix::before {
     clear: both;
 }
 
 h1 {
     color: whitesmoke;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 .pointcolor {
@@ -228,7 +226,6 @@ h1 {
     }
 }
 
-
 /* $Navbar */
 
 .navbar {
@@ -336,7 +333,6 @@ h1 {
     -o-transform: rotate(-45deg);
 }
 
-
 /* 點擊navmenu時 span添加此class */
 
 .navbar__navmenu .active_color {
@@ -373,7 +369,6 @@ h1 {
         -o-transform: translateX(-50%);
     }
 }
-
 
 /* ----- $Menu ----- */
 
@@ -461,7 +456,6 @@ h1 {
     width: 100%;
 }
 
-
 /*----- $Back-to-top -----*/
 
 #back-to-top {
@@ -495,7 +489,6 @@ h1 {
     }
 }
 
-
 /* -----$Footer----- */
 
 .footer {
@@ -504,7 +497,7 @@ h1 {
     background-color: rgb(5, 2, 36);
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
-    color: whitesmoke;
+    color: rgb(236, 236, 236);
     text-align: center;
     font-size: 10px;
     z-index: 50;
@@ -525,7 +518,6 @@ h1 {
 .footer a {
     color: orange;
 }
-
 
 /* -----$Button----- */
 
