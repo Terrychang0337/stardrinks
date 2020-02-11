@@ -5,6 +5,19 @@ var rellax = new Rellax('.rellax', {
 
 });
 
+randomstar();
+function randomstar() {
+
+
+    for (i = 1; i <= 30; i++) {
+
+        var posx = Math.random() * 100 + '%';
+        var posy = Math.random() * -80 + 50 + '%';
+        $('.star').eq(i).css({ "position": "absolute", "left": posx, "top": posy, "animation-delay": (i * -0.1) + 's' })
+
+    }
+}
+
 
 function myload() {
     $(".loading").fadeOut(100);
@@ -203,3 +216,7 @@ $(document).ready(function () {
 
 
 })
+
+// loading star random
+
+

@@ -2,6 +2,7 @@
 
 $Catalog
 $General
+$Loading
 $Navbar
 $Menu
 $Back-to-top 
@@ -37,7 +38,12 @@ h1 {
     font-family: 'Helvetica', 'Noto Sans TC', sans-serif;
 }
 
+/*------$Loading------  */
+
 .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -47,12 +53,13 @@ h1 {
 }
 
 #load {
-    position: absolute;
+    /* position: absolute; */
     width: 600px;
     height: 36px;
-    left: 50%;
-    top: 40%;
-    margin-left: -300px;
+    /* left: 50%; */
+    /* top: 40%; */
+    /* margin-left: -300px; */
+    margin-top: 120px;
     overflow: visible;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -226,6 +233,69 @@ h1 {
     }
 }
 
+.allstars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes falling {
+    0% {
+        opacity: 0;
+        transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -o-transform: translate(100px, 0px);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0px, 200px);
+        -webkit-transform: translate(0px, 200px);
+        -moz-transform: translate(0px, 200px);
+        -ms-transform: translate(0px, 200px);
+        -o-transform: translate(0px, 200px);
+    }
+}
+
+[class^="star"] {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: falling 2s infinite;
+    -webkit-animation: falling 2s infinite;
+}
+
+.loading .brandlogo {
+    animation: beating 2s infinite both;
+    -webkit-animation: beating 2s infinite both;
+}
+
+@keyframes beating {
+    0% {
+        height: 60px;
+        width: 200px;
+    }
+    50% {
+        height: 63px;
+        width: 210px;
+    }
+    100% {
+        height: 60px;
+        width: 200px;
+    }
+}
+
 /* $Navbar */
 
 .navbar {
@@ -339,7 +409,7 @@ h1 {
     background-color: rgb(250, 250, 148);
 }
 
-.navbar .brandlogo {
+.brandlogo {
     display: inline-block;
     position: absolute;
     height: 60px;
@@ -348,7 +418,7 @@ h1 {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     transition: 0.3s all;
     -webkit-transition: 0.3s all;
     -moz-transition: 0.3s all;
