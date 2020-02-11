@@ -574,11 +574,12 @@ h1 {
 }
 
 .footer .brandlogo {
+    position: initial;
     display: block;
     height: 60px;
     width: 200px;
     background-image: url('../images/brandlogo.png');
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
