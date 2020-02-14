@@ -268,7 +268,8 @@ $Footer
 /* -----$Junbotron----- */
 
 .jumbotron {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
+    padding-bottom: 5rem;
     margin-bottom: 0;
     background-color: rgb(15, 4, 27);
 }
@@ -335,7 +336,8 @@ $Footer
 
 .intro {
     width: 100%;
-    padding: 20px 0px;
+    padding: 4rem 1rem;
+    padding-bottom: 5rem;
     z-index: 1;
 }
 
@@ -662,8 +664,8 @@ h1 {
 
 .populardrink {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 90px;
+    padding: 4rem 1rem;
+    padding-bottom: 5rem;
     height: auto;
     background-color: rgb(249, 252, 222);
 }
@@ -776,7 +778,8 @@ h1 {
 
 .location {
     display: block;
-    padding: 20px 0;
+    padding: 4rem 1rem;
+    padding-bottom: 5rem;
     height: auto;
     background-color: rgb(15, 4, 27);
     color: whitesmoke;

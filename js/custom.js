@@ -5,6 +5,7 @@ var rellax = new Rellax('.rellax', {
 
 });
 
+// loading star random
 randomstar();
 function randomstar() {
 
@@ -185,7 +186,11 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
+        adaptiveHeight: true,
+        centerPadding: "2px",
+        pauseOnHover: false,
+        dots: true
     });
 
     introblockcontrol();
@@ -217,6 +222,5 @@ $(document).ready(function () {
 
 })
 
-// loading star random
 
 
